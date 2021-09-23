@@ -1,6 +1,6 @@
 /*
 ============================================================================
- Name : student_database_using_struct_n_array.cpp
+ Name : Student_Database_using_class_n_sorting.cpp
  Author : 23232_Abhishek Jadhav
  Version : 1.0
  Copyright : Your copyright notice
@@ -73,7 +73,7 @@ class student_data
                 if(std_db[i].SGPA == r)
                 {
                     cout<<"\n\n#"<<t<<" Details of Student with SGPA "<<std_db[i].SGPA<<" -";
-                    cout<<"\n\n Student        Name                 SGPA        Student\n    No.                                            ID\n--------------------------------------------------------------\n";
+                    cout<<"\n\n Student        Name                 SGPA        Roll\n    No.                                          No.\n--------------------------------------------------------------\n";
                     cout<<"    "<<i+1<<".        "<<std_db[i].student_name.firstname<<" "<<std_db[i].student_name.lastname;
                     cout<<"   ->>-  "<<std_db[i].SGPA<<"   ->>-  "<<std_db[i].Roll_no;
                     cout<<"\n--------------------------------------------------------------";
@@ -83,7 +83,7 @@ class student_data
             }
             if(t == 0)
             {
-                cout<<"\n Student details not found or Input correct SGPA";
+                cout<<"\n Student '"<<r<<"' not found or Input correct SGPA";
             }
         }
 
@@ -231,7 +231,7 @@ class student_data
             }
             if(lower > upper)
             {
-                cout<<"\n Student details not found or Input correct name";
+                cout<<"\n Student '"<<search<<"' details not found or Input correct name";
             }
         }
 };

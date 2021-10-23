@@ -30,3 +30,12 @@ Student_Database_using_class_n_sorting.cpp ->
          e. Search a particular student according to name using binary search without recursion.
             (all the student records having the presence of search key should be displayed)
             (Note: Implement either Bubble sort or Insertion Sort.)
+[23/10/2021]
+
+On Branch Assignment_3-Expression_conversion ->
+Expression_conversion.cpp ->
+
+      Assignment 3 : Expression Conversion
+   
+         Implement stack as an abstract data type using singly linked list and use this ADT for conversion of infix expression to postfix, prefix and evaluation of postfix and
+         prefix expression.

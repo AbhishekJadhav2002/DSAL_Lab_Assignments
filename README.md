@@ -7,9 +7,11 @@ Batch: F10
 
 My DSAL Lab Assignments with C++ code files are stored in this repository.
 --------------------------------------------------------------------------
---------------------------------------------------------------------------
+__________________________________________________________________________
 
 [21/09/2021]
+
+_***AssignmentNo. 1 >***_
 
 Student_Database_using_class_n_sorting.cpp ->
 
@@ -30,12 +32,17 @@ Student_Database_using_class_n_sorting.cpp ->
          e. Search a particular student according to name using binary search without recursion.
             (all the student records having the presence of search key should be displayed)
             (Note: Implement either Bubble sort or Insertion Sort.)
+
+__________________________________________________________________________
+
 [23/10/2021]
 
-On Branch Assignment_3-Expression_conversion ->
-Expression_conversion.cpp ->
+_***AssignmentNo. 3 >***_
+
+On Branch named -
+Assignment_3-Expression_conversion ->
 
       Assignment 3 : Expression Conversion
    
-         Implement stack as an abstract data type using singly linked list and use this ADT for conversion of infix expression to postfix, prefix and evaluation of postfix and
-         prefix expression.
+         Implement stack as an abstract data type using singly linked list and use this ADT for conversion of infix expression to postfix,
+         prefix and evaluation of postfix and prefix expression.

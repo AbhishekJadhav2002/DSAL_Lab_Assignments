@@ -115,19 +115,27 @@ class Expression_Conversion
 
         bool BracketCheck(string e)
         {
-            Stack<char> b(e.length());
+            int noOfBrackets = 0;
+            for (int i = 0; i < e.length(); i++)
+            {
+                if (e[i] == '(' | e[i] == ')')
+                {
+                    noOfBrackets += 1;
+                }
+            }
+            Stack<char> b(noOfBrackets);
             for (int i = 0; i < e.length(); i++)
             {
                 if (e[i] == '(')
                 {
                     b.push(e[i]);
                 }
-                // if (b.isEmpty())
-                // {
-                //     return false;
-                // }
                 if (e[i] == ')')
                 {
+                    if (b.isEmpty())
+                    {
+                        return false;
+                    }
                     b.pop();
                 }
             }

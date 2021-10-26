@@ -95,7 +95,7 @@ class Expression_Conversion
                 }
                 else if (IsOperator(e[i]) == true)
                 {
-                    operators++;
+                    operators += 1;
                 }
                 else
                 {
@@ -103,7 +103,7 @@ class Expression_Conversion
                     {
                         return 2;
                     }
-                    operands++;
+                    operands += 1;
                 }
             }
             if (operators < (operands-1))

@@ -115,7 +115,7 @@ class Expression_Conversion
 
         bool BracketCheck(string e)
         {
-            stack<char> b;
+            Stack<char> b(e.length());
             for (int i = 0; i < e.length(); i++)
             {
                 if (e[i] == '(')
@@ -131,7 +131,7 @@ class Expression_Conversion
                     b.pop();
                 }
             }
-            return(b.empty());
+            return(b.isEmpty());
         }
 
         string InfixToPostFix()

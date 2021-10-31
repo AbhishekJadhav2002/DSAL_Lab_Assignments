@@ -7,7 +7,15 @@ Batch: F10
 
 My DSAL Lab Assignments with C++ code files are stored in this repository.
 --------------------------------------------------------------------------
-__________________________________________________________________________
+>_________________________________________________________________________
+><h2 align ="center"><i>Index</i></h2>
+>
+>1.<h4 align ="center">[`Assignment No. 1 - Searching and Sorting`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/blob/master/Student_Database_using_class_n_sorting.cpp)</h4>
+>2.<h4 align ="center">[`Assignment No. 2 - Circular Queue`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_2-Queue)</h4>
+>3.<h4 align ="center">[`Assignment No. 3 - Expression Conversion`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_3-Expression_Conversion/Assignment_3-Expression_Conversion)</h4>
+>4.<h4 align ="center">[`Assignment No. 4 - Expression Tree`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_4-Expression_tree)</h4>
+>_________________________________________________________________________
+
 
 [21/09/2021]
 
@@ -35,6 +43,24 @@ Student_Database_using_class_n_sorting.cpp ->
 
 __________________________________________________________________________
 
+[28/09/2021]
+
+_***AssignmentNo. 2 >***_
+
+On Branch named -
+Assignment_2-Queue ->
+
+      Assignment 2 : Circularqueue
+   
+         Implement Circular Queueusing Array. Perform following operations on it.
+         a) Insertion (Enqueue)
+         b) Deletion (Dequeue)
+         c) Display
+         (Note: Handle queue full condition by
+         considering a fixed size of a queue.)
+
+__________________________________________________________________________
+
 [23/10/2021]
 
 _***AssignmentNo. 3 >***_
@@ -46,3 +72,18 @@ Assignment_3-Expression_conversion ->
    
          Implement stack as an abstract data type using singly linked list and use this ADT for conversion of infix expression to postfix,
          prefix and evaluation of postfix and prefix expression.
+
+__________________________________________________________________________
+
+[31/10/2021]
+
+_***AssignmentNo. 4 >***_
+
+On Branch named -
+Assignment_4-Expression_tree ->
+
+      Assignment 4 : Expression Tree
+   
+         Construct an expression tree for  postfix expression and perform recursive and non-recursive  Inorder, Preorder  and  Postorder traversals.
+
+__________________________________________________________________________

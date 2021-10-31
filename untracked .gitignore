@@ -1,9 +1,9 @@
 $ untracked .gitignore
-.Garbage(Extra) File
-.Stack_using_array.cpp
-.Screenshot 2021-10-01 142655.jpg
-.Screenshot 2021-09-27 143012.jpg
-.Screenshot 2021-09-27 142316.jpg
-.MicrosoftTeams-image.png
-.MicrosoftTeams-image (1).png
-.Expression_conversion_using_stack.cpp
+Garbage(Extra) File/
+Stack_using_array.cpp/
+Screenshot 2021-10-01 142655.jpg/
+Screenshot 2021-09-27 143012.jpg/
+Screenshot 2021-09-27 142316.jpg/
+MicrosoftTeams-image.png/
+MicrosoftTeams-image (1).png/
+Expression_conversion_using_stack.cpp/

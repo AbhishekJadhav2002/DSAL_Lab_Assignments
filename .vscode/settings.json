@@ -1,0 +1,28 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#4F0E59",
+        "titleBar.activeBackground": "#6F147C",
+        "titleBar.activeForeground": "#FEFCFE"
+    },
+    "files.associations": {
+        "array": "c",
+        "*.tcc": "c",
+        "deque": "c",
+        "list": "c",
+        "string": "c",
+        "vector": "c",
+        "optional": "c",
+        "string_view": "c",
+        "fstream": "c",
+        "istream": "c",
+        "streambuf": "c",
+        "regex": "c",
+        "stack_imple.cpp": "c",
+        "stack.h": "c",
+        "iostream": "cpp"
+    },
+    "cSpell.words": [
+        "Imple",
+        "inorderwithout"
+    ]
+}

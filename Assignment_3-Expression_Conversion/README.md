@@ -4,6 +4,6 @@
 ---------------------------------------
 For this Assignment, pull this whole folder and save it.
 It contains 
-- Stack.h (Templated Header file)
-- Stack_Imple.cpp (Template Definitions)
-- Expression_conversion.cpp (Main file importing above two files and excecuting expression conversion)
+- `Stack.h` <i>(Templated Header file)</i>
+- `Stack_Imple.cpp` <i>(Template Definitions)</i>
+- `Expression_conversion.cpp` <i>(Main file importing above two files and excecuting expression conversion)</i>

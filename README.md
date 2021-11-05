@@ -14,6 +14,7 @@ My DSAL Lab Assignments with C++ code files are stored in this repository.
 >2.<h4 align ="center">[`Assignment No. 2 - Circular Queue`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_2-Queue)</h4>
 >3.<h4 align ="center">[`Assignment No. 3 - Expression Conversion`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_3-Expression_Conversion/Assignment_3-Expression_Conversion)</h4>
 >4.<h4 align ="center">[`Assignment No. 4 - Expression Tree`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_4-Expression_tree)</h4>
+>5.<h4 align ="center">[`Assignment No. 5 - Binary Search Tree`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_5-BST/Assignment_5-BST)</h4>
 >_________________________________________________________________________
 
 
@@ -85,5 +86,28 @@ Assignment_4-Expression_tree ->
       Assignment 4 : Expression Tree
    
          Construct an expression tree for  postfix expression and perform recursive and non-recursive  Inorder, Preorder  and  Postorder traversals.
+
+__________________________________________________________________________
+
+[05/11/2021]
+
+_***AssignmentNo. 5 >***_
+
+On Branch named -
+Assignment_5-BST ->
+
+      Assignment 5 : BST
+   
+         Implement binary search tree and perform following operations:
+         a) Insert (Handle insertion of duplicate entry)
+         b) Delete
+         c) Search
+         d) Display tree (Traversal)
+         e) Display - Depth of tree
+         f) Display - Mirror image
+         g) Create a copy
+         h) Display all parent nodes with their child nodes
+         i) Display leaf nodes
+         j) Display tree level wise
 
 __________________________________________________________________________

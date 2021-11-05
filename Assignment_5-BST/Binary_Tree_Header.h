@@ -141,28 +141,6 @@ bool Binary_Tree<B> :: isPresent(B k)
     }
 }
 
-// template<typename B>
-// Node<B>* Binary_Tree<B> :: Search(B k)
-// {
-//     Node<B>* p = root;
-//     while(p)
-//     {
-//         if(k == p->data)
-//         {
-//             return p;
-//         }
-//         else if(k < p->data)
-//         {
-//             p = p->left;
-//         }
-//         else
-//         {
-//             p = p->right;
-//         }
-//     }
-//     return NULL;
-// }
-
 template<typename B>
 Node<B>* Binary_Tree<B> :: GetNodeOf(B k)
 {

@@ -27,22 +27,17 @@ int main()
         {
             case 1:
             {
-                // int input;
-                // vector<int> v;
-                // cout<<"\nEnter -1 to stop entering elements...\nEnter Elements : ";
-                // bool app = true;
-                // while(app)
-                // {
-                //     cin>>input;
-                //     if(input == -1){app = false;}
-                //     else{v.push_back(input);}
-                // }
-                // cout<<"\n[ Elements entered in tree ]";
-                int size = 5;
-                int arr[size];
-                for(int i = 0; i < size; i++){cin>>arr[i];}
-                BT.InsertArray(arr, size);
-                // BT.InsertArray(&v.front(), v.size());
+                int input;
+                vector<int> v;
+                cout<<"\nEnter -1 to stop entering elements...\nEnter Elements : ";
+                bool app = true;
+                while(app)
+                {
+                    cin>>input;
+                    if(input == -1){app = false;}
+                    else{v.push_back(input);}
+                }
+                BT.InsertArray(&v.front(), v.size());
                 cout<<"\nBinary Tree built is : ";
                 BT.InorderRec(BT.GetRoot());
                 goto Functions_after_switch;
@@ -105,7 +100,8 @@ int main()
             }
             case 7:
             {
-                cout<<"\nDisplying Leaf Nodes : ";BT.DisplayLeafNodes(BT.GetRoot());
+                cout<<"\nDisplying Leaf Nodes : ";
+                BT.DisplayLeafNodes(BT.GetRoot());
                 goto Functions_after_switch;
             }
             case 8:

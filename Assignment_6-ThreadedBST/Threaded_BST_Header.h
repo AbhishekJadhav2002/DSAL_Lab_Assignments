@@ -286,8 +286,15 @@ void Threaded_BST<B> :: DisplayLevelWise(Node<B>* root)
         Node<B>* temp = Q.front();
         Q.pop();
         cout<<"\n\t\t\t"<<temp->data<<endl;
-        if(temp->left != NULL || temp->lthread != false) {Q.push(temp->left);}
-        if(temp->right != NULL || temp->rthread != false) {Q.push(temp->right);}
+        if(temp->left != NULL || temp->lthread != true) {Q.push(temp->left);}
+        if(temp->right != NULL || temp->rthread != true) {Q.push(temp->right);}
+        if(temp->lthread == true && temp->rthread == true)
+        {
+            Node<B>* temp = Q.front();
+            Q.pop();
+            cout<<"\n\t\t\t"<<temp->data<<endl;
+            break;
+        }
     }
 }
 #endif

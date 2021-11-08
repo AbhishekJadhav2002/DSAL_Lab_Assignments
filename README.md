@@ -15,6 +15,7 @@ My DSAL Lab Assignments with C++ code files are stored in this repository.
 >3.<h4 align ="center">[`Assignment No. 3 - Expression Conversion`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_3-Expression_Conversion/Assignment_3-Expression_Conversion)</h4>
 >4.<h4 align ="center">[`Assignment No. 4 - Expression Tree`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_4-Expression_tree)</h4>
 >5.<h4 align ="center">[`Assignment No. 5 - Binary Search Tree`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_5-BST/Assignment_5-BST)</h4>
+>6.<h4 align ="center">[`Assignment No. 6 - Threaded BST`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_6-Threaded_BST/Assignment_6-ThreadedBST)</h4>
 >_________________________________________________________________________
 
 
@@ -109,5 +110,18 @@ Assignment_5-BST ->
          h) Display all parent nodes with their child nodes
          i) Display leaf nodes
          j) Display tree level wise
+
+__________________________________________________________________________
+
+[07/11/2021]
+
+_***AssignmentNo. 6 >***_
+
+On Branch named -
+Assignment_6-Threaded_BST ->
+
+      Assignment 6 : Threaded BST
+   
+         Implement In-order Threaded Binary Tree. Traverse the implemented tree  in Pre- order too.
 
 __________________________________________________________________________

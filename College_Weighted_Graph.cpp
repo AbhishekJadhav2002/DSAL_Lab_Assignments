@@ -1,3 +1,12 @@
+/*
+============================================================================
+ Name : College_Weighted_Graph.cpp
+ Author : 23232_Abhishek Jadhav
+ Version : 1.0
+ Copyright : Your copyright notice
+ Description : DSAL Lab Assignment No. 7
+============================================================================
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -69,7 +78,7 @@ class Graph
         {
             int current, totalvisited, mincost,i;
             current=0;
-            d[current]=0;
+            d[current] = 0;
             totalvisited =1;
             visited[current]=1;
             // cout<<endl<<"visited distance and path status is :"<< endl<<"i , visited[i] p[i] , d[i]";
@@ -87,7 +96,7 @@ class Graph
                 // cout<<endl<<"total visited="<<totalvisited;
                 for (i=0;i<dept;i++)
                 {
-                    if(Distances[current][i]!=0)
+                    if(Distances[current][i] != 0)
                     {
                         if(visited[i]==0)
                         {
@@ -147,58 +156,93 @@ class Graph
             // } /*end of prim */
         }
 
-        int selectMinVertex(vector<int>& value,vector<bool>& processed)
+        int Kruskal()
         {
-            int minimum = INT_MAX;
-            int vertex;
-            for(int i=0;i<dept;++i)
+            /*
+            3 - 2 : 3
+            2 - 1 : 5
+            3 - 1 : 7
+            4 - 3 : 7
+            4 - 0 : 8
+            3 - 0 : 10
+            1 - 0 : 12
+            Total =  23
+            */
+            int adjMat2[dept][dept];
+            for(int i=0; i<dept; i++)
             {
-                if(processed[i]==false && value[i]<minimum)
+                for(int j=0; j<i; j++)
                 {
-                    vertex = i;
-                    minimum = value[i];
+                    adjMat2[i][j] = Distances[i][j];
+                    adjMat2[j][i] = Distances[j][i];
                 }
             }
-            return vertex;
-        }
-
-        void Dijkstra(int source, int destination)
-        {
-            int parent[dept];		//Stores Shortest Path Structure
-            vector<int> value(dept,INT_MAX);	//Keeps shortest path values to each vertex from source
-            vector<bool> processed(dept,false);	//TRUE->Vertex is processed
-
-            //Assuming start point as Node-0
-            parent[0] = -1;	//Start node has no parent
-            value[0] = 0;	//start node has value=0 to get picked 1st
-
-            //Include (dept-1) edges to cover all dept-vertices
-            for(int i=0;i<dept-1;++i)
+            int count = 0, min, wt = 0, t1, t2;
+            int father[dept];
+            for(int i=0; i<dept; i++)
             {
-                //Select best Vertex by applying greedy method
-                int U = selectMinVertex(value,processed);
-                processed[U] = true;	//Include new Vertex in shortest Path Graph
-
-                //Relax adjacent vertices (not yet included in shortest path graph)
-                for(int j=0;j<dept;++j)
+                father[i] = -1;
+            }
+            int** res = new int*[dept];
+            for(int i=0; i<dept; i++)
+            {
+                res[i] = new int[dept];
+            }
+            for(int i=0; i<dept; i++)
+            {
+                for(int j=0; j<dept; j++)
                 {
-                    /* 3 conditions to relax:-
-                        1.Edge is present from U to j.
-                        2.Vertex j is not included in shortest path graph
-                        3.Edge weight is smaller than current edge weight
-                    */
-                    if(Distances[U][j]!=0 && processed[j]==false && value[U]!=INT_MAX
-                    && (value[U]+Distances[U][j] < value[j]))
+                    res[i][j] = 0;
+                }
+            }
+            while(count < dept-1)
+            {
+                min = 999999;
+                for(int v1=0; v1<dept; v1++)
+                {
+                    for(int v2=0; v2<dept; v2++)
                     {
-                        value[j] = value[U]+Distances[U][j];
-                        parent[j] = U;
+                        if(adjMat2[v1][v2] != 0 && adjMat2[v1][v2] < min)
+                        {
+                            min = adjMat2[v1][v2];
+                            t1  = v1;
+                            t2  = v2;
+                        }
                     }
                 }
+                int temp1 = t1, root_temp1;
+                int temp2 = t2, root_temp2;
+                adjMat2[temp1][temp2] = adjMat2[temp2][temp1] = 0;
+                while(t1 >= 0)
+                {
+                    root_temp1 = t1;
+                    t1 = father[t1];
+                }
+                while(t2 >= 0)
+                {
+                    root_temp2 = t2;
+                    t2 = father[t2];
+                }
+                if(root_temp1 != root_temp2)
+                {
+                    res[temp1][temp2] = res[temp2][temp1] = min;
+                    wt += res[temp1][temp2];
+                    father[root_temp2] = root_temp1;
+                    count++;
+                }
             }
-            //Print Shortest Path Graph
-            // cout<<"Shortest distance from "<<source<<" to "<<destination<<" is : "<<Distances[parent[destination]][source];
-            for(int i=1;i<dept;++i)
-                cout<<"U->dept: "<<parent[i]<<"->"<<i<<"  wt = "<<Distances[parent[i]][i]<<"\n";
+            // cout<<"\n\t Minimum Spanning Tree : "<<endl;
+            // cout<<"\n";
+            // for(int i=0; i<dept; i++)
+            // {
+            //     cout<<"\t\t\t ";
+            //     for(int j=0; j<dept; j++)
+            //     {
+            //         cout<<res[i][j]<<"   ";
+            //     }
+            //     cout<<endl;
+            // }
+            return wt;
         }
 };
 
@@ -219,6 +263,6 @@ int main()
     Graph MyGraph(dept_array.size(), edges);
     MyGraph.TakeGraph();
     MyGraph.DisplayWeightMatrix(&dept_array.front());
-    // cout<<"\nMinimum distance to visit every department (using Dijkstra's algo) is : ";MyGraph.Dijkstra(0, 2);
+    cout<<"\nMinimum distance to visit every department (using Kruskal's algo) is : "<<MyGraph.Kruskal();
     cout<<"\nMinimum distance to visit every department (using Prims's algo) is : "<<MyGraph.Prim();
 }

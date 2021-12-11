@@ -16,6 +16,7 @@ My DSAL Lab Assignments with C++ code files are stored in this repository.
 >4.<h4 align ="center">[`Assignment No. 4 - Expression Tree`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_4-Expression_tree)</h4>
 >5.<h4 align ="center">[`Assignment No. 5 - Binary Search Tree`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_5-BST/Assignment_5-BST)</h4>
 >6.<h4 align ="center">[`Assignment No. 6 - Threaded BST`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_6-Threaded_BST/Assignment_6-ThreadedBST)</h4>
+>7.<h4 align ="center">[`Assignment No. 7 - MST`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_7-MST)</h4>
 >_________________________________________________________________________
 
 
@@ -123,5 +124,21 @@ Assignment_6-Threaded_BST ->
       Assignment 6 : Threaded BST
    
          Implement In-order Threaded Binary Tree. Traverse the implemented tree  in Pre- order too.
+
+__________________________________________________________________________
+
+[04/12/2021]
+
+_***AssignmentNo. 7 >***_
+
+On Branch named -
+Assignment_7-MST ->
+
+      Assignment 7 : Minimum Spamming Tree
+   
+          Represent a graph of your college campus using adjacency list /adjacency matrix. Nodes should represent the various departments/institutes and links should represent
+          the distance between them. Find minimum spanning tree using,
+          a) Using Kruskal’s algorithm
+          b) Using Prim’s algorithm
 
 __________________________________________________________________________

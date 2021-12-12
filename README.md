@@ -4,5 +4,5 @@
 ---------------------------------------
 For this Assignment, pull this whole folder and save it.
 It contains 
-- `College_Weighted_Graph.cpp` <i>(Implements Prim's and Kruskal's Algorithms for minimum costs to visit every department of our college)</i>
+- `MST_using_Dijkstra.cpp` <i>(Implements Dijkstra's Algorithms for minimum costs to visit every department of our college from a single source vertex)</i>
 - `Dept_Input.txt`  &  `Distances_input.txt` <i>(Text files consisting of specific Inputs essential for building Campus Graph access using File Handling)</i>

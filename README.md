@@ -17,6 +17,8 @@ My DSAL Lab Assignments with C++ code files are stored in this repository.
 >5.<h4 align ="center">[`Assignment No. 5 - Binary Search Tree`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_5-BST/Assignment_5-BST)</h4>
 >6.<h4 align ="center">[`Assignment No. 6 - Threaded BST`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_6-Threaded_BST/Assignment_6-ThreadedBST)</h4>
 >7.<h4 align ="center">[`Assignment No. 7 - MST`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_7-MST)</h4>
+>8.<h4 align ="center">[`Assignment No. 8 - Dijkstra's Algorithm`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_8-Dijikstra%E2%80%99s_Algorithm)</h4>
+>9.<h4 align ="center">[`Assignment No. 9 - Heap Sort`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_9-Heap_Sort)</h4>
 >_________________________________________________________________________
 
 
@@ -140,5 +142,32 @@ Assignment_7-MST ->
           the distance between them. Find minimum spanning tree using,
           a) Using Kruskal’s algorithm
           b) Using Prim’s algorithm
+
+__________________________________________________________________________
+
+[11/12/2021]
+
+_***AssignmentNo. 8 >***_
+
+On Branch named -
+Assignment_8-Dijikstra's_Algorithm ->
+
+      Assignment 8 : Dijkstra's Algorithm
+   
+          Represent a graph of city using adjacency matrix /adjacency list. Nodes should represent the various landmarks and links should represent the distance between them.
+          Find the shortest path using Dijkstra's algorithm from single source to all destination. Analyze the implemented algorithm for space and time complexity
+
+__________________________________________________________________________
+
+[13/12/2021]
+
+_***AssignmentNo. 9 >***_
+
+On Branch named -
+Assignment_9-Heap Sort ->
+
+      Assignment 9 : Implementation of Heap Sort
+   
+          Implement Heap sort to sort given set of values using max or min heap.
 
 __________________________________________________________________________

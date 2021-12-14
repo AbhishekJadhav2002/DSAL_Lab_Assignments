@@ -19,6 +19,7 @@ My DSAL Lab Assignments with C++ code files are stored in this repository.
 >7.<h4 align ="center">[`Assignment No. 7 - MST`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_7-MST)</h4>
 >8.<h4 align ="center">[`Assignment No. 8 - Dijkstra's Algorithm`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_8-Dijikstra%E2%80%99s_Algorithm)</h4>
 >9.<h4 align ="center">[`Assignment No. 9 - Heap Sort`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_9-Heap_Sort)</h4>
+>10.<h4 align ="center">[`Assignment No. 10 - File Handling`](https://github.com/AbhishekJadhav2002/DSAL_Lab_Assignments/tree/Assignment_10-File_Handling)</h4>
 >_________________________________________________________________________
 
 
@@ -164,10 +165,25 @@ __________________________________________________________________________
 _***AssignmentNo. 9 >***_
 
 On Branch named -
-Assignment_9-Heap Sort ->
+Assignment_9-Heap_Sort ->
 
       Assignment 9 : Implementation of Heap Sort
    
           Implement Heap sort to sort given set of values using max or min heap.
+
+__________________________________________________________________________
+
+[14/12/2021]
+
+_***AssignmentNo. 10 >***_
+
+On Branch named -
+Assignment_10-File_Handling ->
+
+      Assignment 10 : File Handling
+   
+          Department maintains student’s database. The file contains roll number, name, division and address. Write a program to create a sequential file to store and maintain
+          student data. It should allow the user to add, delete information of student. Display information of particular student. If record of student does not exist an
+          appropriate message is displayed. If student record is found it should display the student details.
 
 __________________________________________________________________________

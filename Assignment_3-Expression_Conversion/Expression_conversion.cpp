@@ -106,7 +106,7 @@ class Expression_Conversion
                     operands += 1;
                 }
             }
-            if (operators < (operands-1))
+            if (operators > (operands-1))
             {
                 return 1;
             }
